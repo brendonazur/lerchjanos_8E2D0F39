@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NB I – 2025/26 Bemutatás & Kvíz</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7f4;
+      color: #111;
+    }
+    header {
+      background: #01693b;
+      color: white;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 22px; }
+    nav a {
+      color: #cdecd6;
+      text-decoration: none;
+      margin-left: 14px;
+      font-weight: bold;
+    }
+    main { padding: 20px; }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    h2 { margin-top: 0; color: #01693b; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background: #01693b;
+      color: white;
+    }
+    .muted { color: #666; font-size: 14px; }
+    .quiz-question { margin-bottom: 18px; }
+    .quiz-question h3 { margin: 0 0 6px 0; }
+    .quiz-question label { display: block; }
+    .btn {
+      background: #01693b;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .result {
+      background: #e8f6ec;
+      border-left: 4px solid #01693b;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>NB I – 2025/26 Szezon</h1>
+  <nav>
+    <a href="#tortenelem">Történelem</a>
+    <a href="#csapatok">Csapatok</a>
+    <a href="#kviz">Kvíz</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- 1️⃣ Történelem -->
+  <section id="page-tortenelem" class="card" style="display:none">
+    <h2>NB I – Történelem és legendák</h2>
+    <p>Az <strong>NB I</strong>, teljes nevén Nemzeti Bajnokság I, Magyarország legmagasabb osztályú labdarúgó-bajnoksága, amelyet 1901-ben alapítottak. Az első bajnokságot a <strong>Budapesti TC</strong> nyerte. Az NB I azóta a magyar futball központi színtere, ahol a legjobb klubok és játékosok versenyeznek.</p>
+
+    <h3>Legnagyobb rekordok</h3>
+    <ul>
+      <li>🏆 <strong>Legtöbb bajnoki cím:</strong> Ferencvárosi TC (35+)</li>
+      <li>⚽ <strong>Legtöbb gól egy szezonban:</strong> Deák Ferenc (66 gól, 1945/46)</li>
+      <li>👴 <strong>Legidősebb gólszerző:</strong> Lipcsei Péter (39 évesen)</li>
+      <li>🧤 <strong>Leghosszabb veretlenség:</strong> Ferencváros (40 mérkőzés)</li>
+    </ul>
+
+    <h3>Ikonikus játékosok</h3>
+    <ul>
+      <li>Puskás Ferenc 🇭🇺 – Kispest / Honvéd legendája, Real Madrid ikonja</li>
+      <li>Albert Flórián – az egyetlen magyar aranylabdás (1967)</li>
+      <li>Bozsik József – az Aranycsapat középpályása</li>
+      <li>Gera Zoltán – Ferencváros és Fulham egykori sztárja</li>
+      <li>Szoboszlai Dominik – a magyar válogatott fiatal vezére</li>
+    </ul>
+
+    <p class="muted">Forrás: MLSZ, Wikipédia, Nemzeti Sport</p>
+  </section>
+
+  <!-- 2️⃣ Csapatok -->
+  <section id="page-csapatok" class="card" style="display:none">
+    <h2>NB I Csapatok – 2025/26-os szezon</h2>
+    <table>
+      <thead>
+        <tr><th>Csapat</th><th>Főbb játékosok</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Ferencváros</td><td>Dibusz Dénes, Botka Endre, Varga Barnabás, Tokmac Nguen, Abena</td></tr>
+        <tr><td>Fehérvár FC</td><td>Kovács Dániel, Kodro, Palkó Dárdai, Fiola Attila, Christensen</td></tr>
+        <tr><td>Paksi FC</td><td>Verpecz István, Hahn János, Papp Kristóf, Bognár István, Szabó János</td></tr>
+        <tr><td>Újpest FC</td><td>Banai Dávid, Csoboth Kevin, Antonov, Obinna, Beridze</td></tr>
+        <tr><td>Debreceni VSC</td><td>Szécsi Márk, Dzsudzsák Balázs, Baranyai, Korhut Mihály, Bárány Donát</td></tr>
+        <tr><td>Kecskeméti TE</td><td>Varga Bence, Horváth Krisztofer, Szuhodovszki, Zeke Márió, Katona Bálint</td></tr>
+        <tr><td>Diósgyőri VTK</td><td>Rados, Molnár Gábor, Grozav, Németh Máté, Szatmári Csaba</td></tr>
+        <tr><td>MTK Budapest</td><td>Mijatovic, Stieber Zoltán, Gera Dániel, Kata Mihály, Bognár István</td></tr>
+        <tr><td>Zalaegerszegi TE</td><td>Dávid Márk, Tajti Mátyás, Meshack, Gergényi Bence, Bedi Bence</td></tr>
+        <tr><td>Puskás Akadémia</td><td>Gyurcsó Ádám, Komáromi György, Spandler Csaba, Nagy Zsolt, Plsek</td></tr>
+        <tr><td>Mezőkövesd Zsóry FC</td><td>Tóth Balázs, Cseri Tamás, Jurina, Vadnai Benedek, Farkas Dániel</td></tr>
+        <tr><td>Nyíregyháza Spartacus</td><td>Farkas Norbert, Kovácsréti Márk, Hornyák Marcell, Ötvös Bence, Baka Patrik</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">A keretek a 2025/26-os szezon előzetes várható játékoslistáit tükrözik.</p>
+  </section>
+
+  <!-- 3️⃣ Kvíz -->
+  <section id="page-kviz" class="card" style="display:none">
+    <h2>NB I Kvíz (10 kérdés)</h2>
+    <div id="quizContainer"></div>
+    <button id="btn-check" class="btn">Ellenőrzés</button>
+    <div id="quizResult" class="result" style="display:none"></div>
+  </section>
+</main>
+
+<script>
+function showPage(hash) {
+  ['tortenelem','csapatok','kviz'].forEach(id =>
+    document.getElementById('page-'+id).style.display='none'
+  );
+  if (hash==='#csapatok') document.getElementById('page-csapatok').style.display='block';
+  else if (hash==='#kviz') document.getElementById('page-kviz').style.display='block';
+  else document.getElementById('page-tortenelem').style.display='block';
+}
+window.addEventListener('hashchange',()=>showPage(location.hash));
+showPage(location.hash);
+
+// === Kvíz kérdések ===
+const quizQuestions = [
+  {q:"Melyik évben alapították az NB I-et?",o:["1899","1901","1910","1920"],a:1},
+  {q:"Melyik csapat nyerte a legtöbb magyar bajnoki címet?",o:["Újpest","MTK","Ferencváros","Honvéd"],a:2},
+  {q:"Ki a magyar NB I történetének legeredményesebb góllövője?",o:["Puskás Ferenc","Deák Ferenc","Albert Flórián","Dzsudzsák Balázs"],a:1},
+  {q:"Melyik város csapata a Diósgyőr?",o:["Debrecen","Miskolc","Győr","Pécs"],a:1},
+  {q:"Melyik csapat színe zöld-fehér?",o:["Újpest","Ferencváros","Fehérvár","MTK"],a:1},
+  {q:"Ki volt az NB I egyetlen aranylabdás játékosa?",o:["Albert Flórián","Bozsik József","Gera Zoltán","Lipcsei Péter"],a:0},
+  {q:"Melyik klub stadionja a Groupama Aréna?",o:["Ferencváros","Puskás Akadémia","Újpest","MTK"],a:0},
+  {q:"Melyik játékos vált híressé a ‘puskásos’ bombagólokról?",o:["Dzsudzsák Balázs","Szoboszlai Dominik","Gera Zoltán","Puskás Ferenc"],a:3},
+  {q:"Melyik klub székhelye Felcsút?",o:["Puskás Akadémia","Zalaegerszeg","Fehérvár","Paks"],a:0},
+  {q:"Hány csapat szerepel az NB I-ben a 2025/26-os szezonban?",o:["10","12","14","16"],a:1}
+];
+
+function renderQuiz() {
+  const c=document.getElementById('quizContainer');
+  c.innerHTML='';
+  quizQuestions.forEach((item,i)=>{
+    const div=document.createElement('div');
+    div.className='quiz-question';
+    div.innerHTML=`<h3>${i+1}. ${item.q}</h3>`+
+      item.o.map((opt,oi)=>`<label><input type="radio" name="q${i}" value="${oi}"> ${opt}</label>`).join('');
+    c.appendChild(div);
+  });
+}
+
+document.getElementById('btn-check').addEventListener('click',()=>{
+  let score=0;
+  quizQuestions.forEach((q,i)=>{
+    const sel=document.querySelector(`input[name="q${i}"]:checked`);
+    if(sel && parseInt(sel.value)===q.a) score++;
+  });
+  const res=document.getElementById('quizResult');
+  res.style.display='block';
+  res.innerHTML=`<strong>Eredmény:</strong> ${score} / ${quizQuestions.length} helyes válasz`;
+});
+
+renderQuiz();
+</script>
+
+</body>
+</html>
+

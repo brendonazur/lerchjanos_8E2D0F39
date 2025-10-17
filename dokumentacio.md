@@ -1,41 +1,54 @@
-Foci
-Bemutatás
+🏆 Weboldal Dokumentáció – NB I 2025/2026 bemutatása
+🎯 Téma rövid bemutatása
 
-10 csapat méri össze tudását.
-Mindegyik csapatnak van erőssége és ügyessége.
+A weboldal a magyar labdarúgó-bajnokság, az OTP Bank Liga (NB I) világát mutatja be.
+A cél, hogy a látogató megismerje a bajnokság történetét, legendás játékosait, a 2025/2026-os szezon csapatait és játékosait, valamint tesztelhesse tudását egy interaktív kvízben.
+A projekt egy modern, tanulóbarát sporttémájú webalkalmazás, amely informatív és szórakoztató is egyben.
 
-Minden meccsnél  ezek az értékek véletlenszerűen változnak, így mindig más-más csapat lesz a legerősebb vagy leggyengébb.
-A cél, hogy megtaláljuk, ki a legjobb csapat, és lejátszunk néhány izgalmas mérkőzést köztük.
+⚙️ Felhasznált technológiák
 
-Technológiák
+HTML5 – a weboldal szerkezeti felépítéséhez (fejléc, szekciók, táblázatok, űrlapok).
 
-HTML – a vizuális megjelenítéshez, az oldal szerkezetének kialakításához.
+CSS3 – a vizuális megjelenítéshez (színek, elrendezés, árnyékok, tipográfia, reszponzív design).
 
-CSS – a stílushoz, hogy szebb, focipálya hangulatú környezetet kapjunk.
+JavaScript (ES6) – az oldal dinamikus működéséhez (oldalváltás, kvízlogika, válaszellenőrzés, pontszám kijelzése).
 
-JavaScript – a háttérben futó logikához: a csapatok létrehozásához, kiértékeléséhez és a mérkőzések szimulálásához.
+🧩 Az egyes részek és funkciók leírása
+1️⃣ Történelem oldal
 
-Függvények
-legjobbCsaapatKivalasztas()
+Röviden bemutatja az NB I múltját, alapítását (1901), és néhány fontos rekordot.
 
-Kiválasztja és kiírja a legjobb csapat erősségét × ügyesség alapján.
+Felsorolja a magyar futball történetének legismertebb játékosait (pl. Puskás Ferenc, Albert Flórián, Gera Zoltán).
 
-leggyengebbFocistaKivalasztas()
+Célja az ismeretterjesztés és a sportkultúra bemutatása.
 
-Kiválasztja és kiírja a leggyengébb focistát erőőssége × ügyesség alapján.
+2️⃣ Csapatok oldal
 
-randomCsapatGenerator()
+Listázza a 2025/2026-os NB I-es idény 12 csapatát, például:
+Ferencváros, Fehérvár FC, Paksi FC, Újpest FC, DVTK, DVSC, MTK, Kecskeméti TE, Mezőkövesd, ZTE, Puskás Akadémia, Nyíregyháza Spartacus.
 
-Létrehoz egy csapatot véletlenszerű erősség és ügyesség értékekkel.
-Ezt tízszer lefuttatva kapjuk meg a 10 csapatot.
+Minden csapat mellett néhány valós játékos is megjelenik a jelenlegi keretből.
 
-merkozes()
+Táblázatos formában jeleníti meg az adatokat, a könnyebb áttekinthetőség érdekében.
 
-Két véletlenszerűen kiválasztott csapat mérkőzik meg egymással,
-addig, amíg egyikük (vagy mindkettő) erőnléte elfogy.
-A végén kiírja, ki a győztes, vagy ha döntetlen az eredmény.
+3️⃣ Kvíz oldal
 
-Téma
+Egy 10 kérdéses interaktív kvíz, amely az NB I történetéről, rekordjairól és csapatairól szól.
 
-A weboldal a csapatokrolszól, akik különböző képességekkel rendelkeznek, és egymással mérkőznek meg.
-A cél, hogy minden új játék során más eredmény szülessen, ezzel szimulálva a futball kiszámíthatatlanságát.
+A felhasználó több válaszlehetőség közül választhat.
+
+A JavaScript kiszámolja, hány helyes választ adott, és megjeleníti az eredményt.
+
+🧠 Függvények funkciói (röviden)
+
+showPage(hash) – az oldal hash értéke alapján mutatja a megfelelő aloldalt (történelem / csapatok / kvíz).
+
+renderQuiz() – létrehozza a 10 kérdésből álló kvíz űrlapot JavaScript segítségével.
+
+Eseménykezelő a „Válaszok ellenőrzése” gombra – ellenőrzi a felhasználó válaszait, és kiszámolja az elért pontszámot.
+
+📚 A weboldal témája
+
+Téma: A magyar labdarúgó NB I bajnokság múltja, jelene és tudáspróbája.
+A projekt célja, hogy egyetlen weboldalon keresztül bemutassa a magyar futball legfontosabb aspektusait —
+a történelmi hátteret, a jelenlegi klubokat és játékosaikat, valamint játékos formában oktassa a látogatót.

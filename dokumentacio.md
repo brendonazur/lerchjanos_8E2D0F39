@@ -52,3 +52,5 @@ Eseménykezelő a „Válaszok ellenőrzése” gombra – ellenőrzi a felhaszn
 Téma: A magyar labdarúgó NB I bajnokság múltja, jelene és tudáspróbája.
 A projekt célja, hogy egyetlen weboldalon keresztül bemutassa a magyar futball legfontosabb aspektusait —
 a történelmi hátteret, a jelenlegi klubokat és játékosaikat, valamint játékos formában oktassa a látogatót.
+
+## forrás: chatgpt,Eredmények.com

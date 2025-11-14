@@ -35,19 +35,9 @@
       margin-bottom: 24px;
     }
     h2 { margin-top: 0; color: #01693b; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-    }
-    th {
-      background: #01693b;
-      color: white;
-    }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    th { background: #01693b; color: white; }
     .muted { color: #666; font-size: 14px; }
     .quiz-question { margin-bottom: 18px; }
     .quiz-question h3 { margin: 0 0 6px 0; }
@@ -168,6 +158,7 @@ const quizQuestions = [
   {q:"Hány csapat szerepel az NB I-ben a 2025/26-os szezonban?",o:["10","12","14","16"],a:1}
 ];
 
+// === Kvíz renderelés ===
 function renderQuiz() {
   const c=document.getElementById('quizContainer');
   c.innerHTML='';
@@ -180,15 +171,25 @@ function renderQuiz() {
   });
 }
 
+// === Számlálás és eredmény ===
 document.getElementById('btn-check').addEventListener('click',()=>{
   let score=0;
+  let unanswered=0;   // ← SZÁMLÁLÁS PROGRAMOZÁSI TÉTEL
+
   quizQuestions.forEach((q,i)=>{
     const sel=document.querySelector(`input[name="q${i}"]:checked`);
-    if(sel && parseInt(sel.value)===q.a) score++;
+    if(!sel) {
+      unanswered++;   // ← itt számoljuk, hány kérdés maradt kitöltetlen
+    } else if(parseInt(sel.value)===q.a) {
+      score++;
+    }
   });
+
   const res=document.getElementById('quizResult');
   res.style.display='block';
-  res.innerHTML=`<strong>Eredmény:</strong> ${score} / ${quizQuestions.length} helyes válasz`;
+  res.innerHTML=
+    `<strong>Eredmény:</strong> ${score} / ${quizQuestions.length}<br>
+     <strong>Meg nem válaszolt kérdések:</strong> ${unanswered}`;
 });
 
 renderQuiz();
